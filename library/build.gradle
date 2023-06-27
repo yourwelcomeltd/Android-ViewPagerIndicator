@@ -1,15 +1,14 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
-  compile 'com.android.support:support-v4:21.0.0'
+  implementation 'androidx.core:core:1.0.0'
+  implementation 'androidx.viewpager:viewpager:1.0.0'
 }
 
 android {
   compileSdkVersion 23
-  buildToolsVersion "21.1.1"
 
   defaultConfig {
-    minSdkVersion 7
     targetSdkVersion 21
   }
 
@@ -25,5 +24,3 @@ android {
     }
   }
 }
-
-apply from: '../../gradle-mvn-publish.gradle'
