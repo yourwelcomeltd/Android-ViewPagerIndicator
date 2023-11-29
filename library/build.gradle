@@ -8,6 +8,8 @@ dependencies {
 android {
   compileSdkVersion 23
 
+  namespace "com.viewpagerindicator"
+
   defaultConfig {
     targetSdkVersion 21
   }
@@ -23,4 +25,8 @@ android {
       assets.srcDirs = ['assets']
     }
   }
+    buildFeatures {
+        renderScript true
+        aidl true
+    }
 }
